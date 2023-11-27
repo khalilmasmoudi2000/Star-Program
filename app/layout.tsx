@@ -1,8 +1,8 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import './globals.css';
+import type { Metadata } from 'next';
+import { K2D } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const k2d = K2D({ subsets: ['latin'], weight: '400', variable: '--font-k2d' })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${k2d.variable} font-k2d`}>
+        {children}
+      </body>
     </html>
   )
 }

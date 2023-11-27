@@ -8,12 +8,31 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      scrollbar: ['rounded'],
+      colors: {
+        'primary-black': '#0d0e12',
+        'secondary-white': '#ffffff',
       },
+      backgroundImage: {
+        'header-button-bg': "url('../public/NavIcon.svg')",
+      },
+      content: {
+        'nav-select-icon': "url('../public/NavIcon.svg')",
+      },
+      dropShadow: {
+        'nav-logo-select-shadow': '0 0 5px #ffffff',
+      },
+      boxShadow: {
+        'black-box-shadow': '0 0 10px 0 #0000004d',
+      }
     },
+    fontFamily: {
+      ubuntu: ['var(--font-ubuntu)'],
+      k2d: ['var(--font-k2d)'],
+      exo2: ['var(--font-exo2)'],
+      encode: ['var(--font-encode)'],
+      exo: ['var(--font-exo)'],
+    }
   },
   plugins: [],
 }
