@@ -10,8 +10,10 @@ const config: Config = {
     extend: {
       scrollbar: ['rounded'],
       colors: {
-        'primary-black': '#0d0e12',
-        'secondary-white': '#ffffff',
+        'primary-white': '#ffffff',
+        'secondary-black': '#000000',
+        'dark-pink': '#FF007A',
+        'light-pink': '#FF8BB7',
       },
       backgroundImage: {
         'header-button-bg': "url('../public/NavIcon.svg')",
@@ -20,10 +22,13 @@ const config: Config = {
         'nav-select-icon': "url('../public/NavIcon.svg')",
       },
       dropShadow: {
-        'nav-logo-select-shadow': '0 0 5px #ffffff',
+        'image-shadow': '0 0 30px #ffffff',
+        'document-shadow': '0 0 10px #ffffff',
       },
       boxShadow: {
-        'black-box-shadow': '0 0 10px 0 #0000004d',
+        'title-shadow': '0px 0px 15px 0px #FF007A',
+        'grade-shadow': '0px 0px 10px 0px #FF007A',
+        'document-shadow': '0px 0px 15px 0px #FFFFFF',
       }
     },
     fontFamily: {
@@ -31,7 +36,8 @@ const config: Config = {
       k2d: ['var(--font-k2d)'],
       exo2: ['var(--font-exo2)'],
       encode: ['var(--font-encode)'],
-      exo: ['var(--font-exo)'],
+      inter: ['var(--font-inter)'],
+      raleway: ['var(--font-raleway)'],
     }
   },
   plugins: [],

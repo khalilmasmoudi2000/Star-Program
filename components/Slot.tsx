@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Header = () => {
+const Slot = () => {
     return (
         <div>
-            Header
+            Slot
         </div>
     );
 };
 
-export default Header;
+export default Slot;

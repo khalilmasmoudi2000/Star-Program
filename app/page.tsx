@@ -1,12 +1,14 @@
 import React from 'react';
-import { Navbar, Footer } from '../components';
-import { Header } from '../containers';
+import { Navbar, Title, Footer } from '../components';
+import { Header, Services } from '../containers';
 
 export default function Home() {
   return (
-      <div>
+      <div className="bg-primary-white overflow-x-hidden h-screen w-screen">
           <Navbar />
           <Header />
+          <Title title="Our Services" />
+          <Services />
           <Footer />
       </div>
   )
