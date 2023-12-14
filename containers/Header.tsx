@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from '@/app/index';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Typewriter } from "react-simple-typewriter";
 import SPImage from '@/public/SPImage.png';
 import { Exo_2, Inter } from 'next/font/google';
@@ -21,7 +22,7 @@ const Header = () => {
                             deleteSpeed={25}
                             loop={0}
                             typeSpeed={100}
-                            words={['Inspiring Women', 'Shaping Futures', 'React Simple', 'A Simple React']}
+                            words={['Inspiring Women', 'Shaping Futures', 'Igniting Change', 'Nurturing Talents']}
                         />
                     </div>
                     <div className={styles.heroDescription}>
@@ -32,9 +33,11 @@ const Header = () => {
                     </div>
                 </div>
                 <div>
-                    <button className={`${styles.heroButton} ${inter.variable} font-inter`}>
-                        Join Us
-                    </button>
+                    <Link href="/contact" className={`${inter.variable} font-inter`}>
+                        <button className={`${styles.heroButton} ${inter.variable} font-inter`}>
+                            Join Us
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className={styles.heroPicture}>

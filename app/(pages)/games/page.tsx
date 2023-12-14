@@ -1,11 +1,11 @@
 import React from 'react';
-import { Navbar, Footer } from '@/components';
+import { Navbar, Label, Footer } from '@/components';
 
 const Games = () => {
     return (
         <div>
             <Navbar />
-            Games
+            <Label title="Metaverse Adventures" subtitle="Enter the Virtual Realm, Play Beyond Boundaries" />
             <Footer />
         </div>
     );

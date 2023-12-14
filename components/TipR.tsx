@@ -11,8 +11,8 @@ type TipProps = {
 const TipR: React.FC<TipProps> = ({ image, title, description}) => {
     return (
         <div className={styles.tipContainer}>
-            <Image src={image} alt="TipR" width={240} height={240} />
-            <div className={styles.tipContent}>
+            <Image src={image} alt="TipR" className={styles.tipPicture} width={320} height={320} />
+            <div className={`${styles.tipContent} bg-gradient-to-r from-light-pink to-transparent`}>
                 <div className={styles.tipTitle}>
                     {title}
                 </div>

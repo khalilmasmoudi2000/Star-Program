@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { navVariants } from "@/utils/motion";
-import SPLogo from '@/public/MFIcon.svg';
+import SPLogo from '@/public/SPLogo.png';
 
 const Navbar = () => {
     const currentRoute = usePathname();
@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className={`${styles.innerWidth} text-exo2 mx-auto px-12 py-2 flex justify-between items-center select-none`}>
                 <div>
                     <Link href="/" className={styles.navLogo}>
-                        <Image src={SPLogo} alt="MFIcon" width={84} height={84} className="flex justify-center object-contain z-10 hover:scale-105 hover:drop-shadow-nav-logo-select-shadow" />
+                        <Image src={SPLogo} alt="MFIcon" width={140} height={140} className="flex justify-center object-contain z-10 hover:scale-105 hover:drop-shadow-nav-logo-select-shadow" />
                     </Link>
                 </div>
                 <div className="flex gap-8">
@@ -31,8 +31,8 @@ const Navbar = () => {
                     <Link href="/arts" className={`${styles.navText} ${currentRoute === "/arts" ? "from-dark-purple to-light-pink bg-gradient-to-b bg-clip-text text-transparent after:content-[\'\'] after:bg-gradient-to-r from-nav-select-color to-transparent after:h-[2px] after:w-[30%] after:left-0 after:absolute after:-bottom-[10px] before:content-[\'\'] before:bg-gradient-to-l from-nav-select-color to-transparent before:h-[2px] before:w-[30%] before:right-0 before:absolute before:-top-[5px]" : ""} relative group`}>
                         Arts
                     </Link>
-                    <Link href="/entrepreneurship" className={`${styles.navText} ${currentRoute === "/entrepreneurship" ? "from-dark-purple to-light-pink bg-gradient-to-b bg-clip-text text-transparent after:content-[\'\'] after:bg-gradient-to-r from-nav-select-color to-transparent after:h-[2px] after:w-[30%] after:left-0 after:absolute after:-bottom-[10px] before:content-[\'\'] before:bg-gradient-to-l from-nav-select-color to-transparent before:h-[2px] before:w-[30%] before:right-0 before:absolute before:-top-[5px]" : ""} relative group`}>
-                        Entrepreneurship
+                    <Link href="/empowerment" className={`${styles.navText} ${currentRoute === "/empowerment" ? "from-dark-purple to-light-pink bg-gradient-to-b bg-clip-text text-transparent after:content-[\'\'] after:bg-gradient-to-r from-nav-select-color to-transparent after:h-[2px] after:w-[30%] after:left-0 after:absolute after:-bottom-[10px] before:content-[\'\'] before:bg-gradient-to-l from-nav-select-color to-transparent before:h-[2px] before:w-[30%] before:right-0 before:absolute before:-top-[5px]" : ""} relative group`}>
+                        Empowerment
                     </Link>
                     <Link href="/inspiration" className={`${styles.navText} ${currentRoute === "/inspiration" ? "from-dark-purple to-light-pink bg-gradient-to-b bg-clip-text text-transparent after:content-[\'\'] after:bg-gradient-to-r from-nav-select-color to-transparent after:h-[2px] after:w-[30%] after:left-0 after:absolute after:-bottom-[10px] before:content-[\'\'] before:bg-gradient-to-l from-nav-select-color to-transparent before:h-[2px] before:w-[30%] before:right-0 before:absolute before:-top-[5px]" : ""} relative group`}>
                         Inspiration

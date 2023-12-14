@@ -24,6 +24,8 @@ const config: Config = {
       dropShadow: {
         'image-shadow': '0 0 30px #ffffff',
         'document-shadow': '0 0 10px #ffffff',
+        'tip-shadow': '0 0 20px #FF007A',
+        'story-shadow': '0 0 5px #FF007A',
       },
       boxShadow: {
         'title-shadow': '0px 0px 15px 0px #FF007A',

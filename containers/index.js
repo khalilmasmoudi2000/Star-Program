@@ -4,6 +4,8 @@ import Grades from "./Grades";
 import Collection from "./Collection";
 import Portal from "./Portal";
 import Tips from "./Tips";
+import Stories from "./Stories";
+import Nexus from "./Nexus";
 
 export {
     Header,
@@ -11,5 +13,7 @@ export {
     Grades,
     Collection,
     Portal,
-    Tips
+    Tips,
+    Stories,
+    Nexus
 }

@@ -2,8 +2,8 @@ import React from 'react';
 import styles from '@/app/index';
 import Link from 'next/link';
 import Image from 'next/image';
-import Business from '@/public/Business.png';
-import Health from '@/public/Health.png';
+import Success from '@/public/Success.png';
+import Healthcare from '@/public/Healthcare.png';
 import { Raleway } from 'next/font/google';
 
 const raleway = Raleway({ subsets: ['latin'], weight: '400', variable: '--font-raleway' });
@@ -12,14 +12,18 @@ const Portal = () => {
     return (
         <div className={styles.portalSection}>
             <div className={`${styles.portalContainer} ${raleway.variable} font-raleway`}>
-                <Link className={styles.portalLink} href="/health">
-                    <Image src={Health} alt="Health" width={240} height={240} />
-                    <div>Health Tips</div>
-                </Link>
-                <Link className={styles.portalLink} href="/success">
-                    <Image src={Business} alt="Business" width={240} height={240} />
-                    <div>Success Stories</div>
-                </Link>
+                <div className={styles.portalContent}>
+                    <Link className={styles.portalLink} href="/health">
+                        <Image className={styles.portalImage} src={Healthcare} alt="Healthcare" width={460} height={460} />
+                        <div className={styles.portalTitle}>Healthcare</div>
+                    </Link>
+                </div>
+                <div className={styles.portalContent}>
+                    <Link className={styles.portalLink} href="/success">
+                        <Image className={styles.portalImage} src={Success} alt="Success" width={460} height={460} />
+                        <div className={styles.portalTitle}>Success Stories</div>
+                    </Link>
+                </div>
             </div>
         </div>
     );

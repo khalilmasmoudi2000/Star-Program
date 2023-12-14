@@ -46,17 +46,17 @@ const styles = {
     collectionContainer: 'flex w-[1080px] h-[640px] bg-gradient-to-r from-light-pink to-transparent border-[2px] border-[#FF81A5] rounded-[16px] z-50',
     collectionContent: 'flex flex-col justify-center px-8 z-50',
 
-    sidebarContainer: 'w-[240px] flex flex-col bg-[#FF81A5] rounded-[14px] border-r-[3px] border-dark-pink gap-4 z-50',
+    sidebarContainer: 'w-[260px] flex flex-col bg-[#FF81A5] rounded-[14px] border-r-[3px] border-dark-pink gap-4 z-50',
     sidebarTitle: 'text-[24px] font-bold leading-[32px] border-black px-4 py-4 z-50',
     sidebarContent: 'flex flex-col pr-[10px] py-6 tracking-wider gap-4 z-50',
     sidebarIcon: 'text-[24px] pr-4 z-50',
     sidebarSubTitle: 'flex flex-col gap-4 font-raleway font-semibold text-[18px] leading-[32px] z-50',
 
-    gridContainer: 'flex px-16 py-8 z-50',
+    gridContainer: 'flex px-6 py-8 z-50',
 
     documentContainer: 'flex flex-col items-center px-6 py-4 z-50',
-    documentTitle: 'w-[160px] bg-[#FF81A5] text-[16px] leading-[32px] rounded-b-[12px] px-1 shadow-document-shadow z-50',
-    documentContent: 'w-[160px] h-[200px] rounded-t-[12px] shadow-document-shadow z-50',
+    documentTitle: 'flex flex-row justify-between items-center px-1 w-[220px] bg-[#FF81A5] text-[16px] leading-[32px] rounded-b-[12px] px-1 shadow-document-shadow z-50',
+    documentContent: 'w-[220px] h-[250px] rounded-t-[12px] shadow-document-shadow z-50',
 
     videoContainer: 'flex flex-col items-center px-6 py-4 z-50',
     videoTitle: 'w-[480px] bg-[#FF81A5] text-[16px] leading-[32px] rounded-b-[12px] px-2 shadow-document-shadow z-50',
@@ -64,17 +64,45 @@ const styles = {
 
     paginationButton: 'bg-black cursor-pointer z-50',
 
-    portalSection: 'flex justify-center py-12 z-50',
+    portalSection: 'flex justify-center z-50',
     portalContainer: 'flex flex-row gap-16 z-50',
-    portalLink: 'flex flex-col items-center gap-4 z-50',
-    portalTitle: 'text-[48px] font-raleway font-bold z-50',
+    portalContent: 'hover:scale-105 z-50',
+    portalLink: 'flex flex-col items-center z-50',
+    portalImage: 'hover:drop-shadow-tip-shadow z-50',
+    portalTitle: 'px-8 py-1 text-[28px] font-raleway font-semibold bg-[#FFDDEA] border-[#FF007A] border-x-[1px] rounded-[14px] shadow-title-shadow z-50',
 
     tipsContainer: 'flex flex-col items-center gap-8 z-50',
 
-    tipContainer: 'flex flex-row items-center gap-4 z-50',
-    tipContent: 'w-[720px] z-50',
+    tipContainer: 'flex flex-row items-center gap-12 py-12 z-50',
+    tipContent: 'w-[720px] px-8 py-4 rounded-[12px] border-dark-pink border-[1px] shadow-title-shadow z-50',
     tipTitle: 'text-[24px] font-bold leading-[32px] z-50',
-    tipDescription: '',
+    tipDescription: 'px-2 py-2',
+    tipPicture: 'drop-shadow-tip-shadow',
+
+    storiesContainer: 'flex flex-col items-center py-12 gap-16 z-50',
+
+    storyContainer: 'flex flex-row rounded-[16px] border-dark-pink border-[1px] drop-shadow-story-shadow z-50',
+    storyContent: 'w-[640px] px-8 py-4 bg-[#D9D9D9] rounded-r-[16px] z-50',
+    storyImage: 'rounded-l-[14px] z-50',
+    storyTitle: 'text-[24px] font-bold leading-[32px] z-50',
+    storyDescription: 'pt-2 pb-6 text-justify z-50',
+    storyLine: 'w-[80%] h-[2px] bg-gradient-to-r from-[#545454] to-transparent z-50',
+    storyTypes: 'flex flex-row gap-4 pt-4 z-50',
+    storyButton: 'px-4 py-1 font-semibold bg-gradient-to-t from-dark-pink to-light-pink rounded-tl-[14px] rounded-tr-[24px] rounded-bl-[24px] rounded-br-[14px] border-[1px] border-dark-pink z-50',
+
+    nexusContainer: 'flex flex-row justify-center py-12 gap-16 z-50',
+    nexusContent: 'relative w-[320px] z-50',
+    nexusStatic: 'absolute -top-10 w-[300px] h-[300px] rounded-[16px] bg-[#FF81A5] -z-50',
+    nexusOne: 'left-12',
+    nexusTwo: 'left-[10px]',
+    nexusThree: '-left-7',
+    nexusImage: 'rounded-[16px] drop-shadow-image-shadow cursor-pointer z-50',
+    nexusTitle: 'text-[28px] text-white font-bold leading-[32px] z-50',
+    nexusHover: 'absolute inset-0 bg-gray-800 bg-opacity-50 opacity-0 rounded-[16px] group-hover:opacity-100 flex items-center justify-center z-50',
+
+    alphabeticContainer: 'flex flex-col justify-center gap-8 py-12 z-50',
+    alphabeticRow: 'flex flex-row justify-center gap-8 z-50',
+    alphabeticLetter: 'w-[48px] h-[48px] text-[24px] font-bold leading-[32px] rounded-[12px] border-[1px] border-dark-pink bg-light-pink cursor-pointer z-50',
 };
 
 export default styles;

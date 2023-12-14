@@ -10,6 +10,8 @@ import Grid from "./Grid";
 import Pagination from "./Pagination";
 import TipL from "./TipL";
 import TipR from "./TipR";
+import Story from "./Story";
+import Alphabetic from "./Alphabetic";
 import Footer from "./Footer";
 
 export {
@@ -25,5 +27,7 @@ export {
     Pagination,
     TipL,
     TipR,
+    Story,
+    Alphabetic,
     Footer
 }
